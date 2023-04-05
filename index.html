@@ -5,111 +5,132 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/64d58efce2.js"></script>
-    <link rel="icon" type="image/x-icon" href="./images/fav-icn.ico">
-    <title>weather forecast</title>
+    <link rel="icon" type="image/x-icon" href="/images/fav-icn.ico">
+    <title>Weather Forecast</title>
     <link rel="stylesheet" href="./styles.css">
 </head> 
 <body>
-    <div class="weather-top-container">    
-        <div class="wrapper">
-            <div class="search">
-                <input type="search" placeholder="type city..." class="input" id="cityInput">
-                <button class="btn">
-                    <i class="fas fa-search"></i>
-                </button>
-            </div>
-            <div class="error">
-                <p>Invalid city name</p>
-            </div>
-            <div class="weather-details">
-                <img src="images/rain.png" alt="" class="weather-icon">
-                <h1 class="temp">22<span>&#8451</span></h1>
-                <h2 class="city">Raipur</h2>
-                
-                <div class="details">
-                    <div class="col">
-                        <img src="images/humidity.png" alt="">
-                        <div>
-                            <p class="humidity">50%</p>
-                            <p>Humidity</p>
+    <nav class="nav-bar">
+        <h1 class="nav-heading">Weather Forecast</h1>
+    </nav>
+    <main class="page">    
+        <div class="weather-top-container">
+            <div class="wrapper">
+                <div class="search-container">
+                    <input type="search" placeholder="type city..." class="input" id="cityInput">
+                    <button class="btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                <div class="error">
+                    <p>Invalid city name</p>
+                </div>
+                <div class="weather-details">
+                    <img src="images/rain.png" alt="" class="weather-icon">
+                    <h1 class="temp">22<span>&#8451</span></h1>
+                    <h2 class="city">Raipur</h2>
+                    <div class="details">
+                        <div class="col col-1">
+                            <img src="images/humidity.png" alt="">
+                            <div>
+                                <p class="humidity">50%</p>
+                                <p>Humidity</p>
+                            </div>
+                        </div>
+                        <div class="col col-2">
+                            <img src="images/wind.png" alt="">
+                            <div class="wind-detail">
+                                <p class="wind">50 km/h</p>
+                                <p>Wind Speed</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <img src="images/wind.png" alt="">
-                        <div>
-                            <p class="wind">50 km/h</p>
-                            <p>Wind Speed</p>
-                        </div>
+                </div>
+            </div>
+            <div class="bg-img">
+            </div>
+        </div>
+
+        <h2 class="days-forcast">7 Days Weather Forcast</h2>
+
+
+        <div class="days-container">
+            <div class="icon-container">
+                <div class="icons">
+                    <p class="weather" id="day1"></p>
+                    <div class="image"> 
+                        <img src="./images/dots.jpeg" alt="" id="img1" class="day-wise-img">
+                    </div>
+                    <div class="day-temp">
+                        <p class="minValues" id="day1Min">Loading...</p>
+                        <p class="maxValues" id="day1Max">Loading...</p>
+                    </div>
+                </div>
+                <div class="icons">
+                    <p class="weather" id="day2"></p>
+                    <div class="image"> 
+                        <img src="./images/dots.jpeg" alt="" id="img2" class="day-wise-img">
+                    </div>
+                    <div class="day-temp">
+                        <p class="minValues" id="day2Min">Loading...</p>
+                        <p class="maxValues" id="day2Max">Loading...</p>
+                    </div>
+                </div>
+                <div class="icons">
+                    <p class="weather" id="day3"></p>
+                    <div class="image"> 
+                        <img src="./images/dots.jpeg" alt="" id="img3" class="day-wise-img">
+                    </div>
+                    <div class="day-temp">
+                        <p class="minValues" id="day3Min">Loading...</p>
+                        <p class="maxValues" id="day3Max">Loading...</p>
+                    </div>
+                </div>
+                <div class="icons">
+                    <p class="weather" id="day4"></p>
+                    <div class="image"> 
+                        <img src="./images/dots.jpeg" alt="" id="img4" class="day-wise-img">
+                    </div>
+                    <div class="day-temp">
+                        <p class="minValues" id="day4Min">Loading...</p>
+                        <p class="maxValues" id="day4Max">Loading...</p>
+                    </div>
+                </div>
+                <div class="icons">
+                    <p class="weather" id="day5"></p>
+                    <div class="image"> 
+                        <img src="./images/dots.jpeg" alt="" id="img5" class="day-wise-img">
+                    </div>
+                    <div class="day-temp">
+                        <p class="minValues" id="day5Min">Loading...</p>
+                        <p class="maxValues" id="day5Max">Loading...</p>
+                    </div>
+                </div>
+                <div class="icons">
+                    <p class="weather" id="day6"></p>
+                    <div class="image"> 
+                        <img src="./images/dots.jpeg" alt="" id="img6" class="day-wise-img">
+                    </div>
+                    <div class="day-temp">
+                        <p class="minValues" id="day6Min">Loading...</p>
+                        <p class="maxValues" id="day6Max">Loading...</p>
+                    </div>
+                </div>
+                <div class="icons">
+                    <p class="weather" id="day7"></p>
+                    <div class="image"> 
+                        <img src="./images/dots.jpeg" alt="" id="img7" class="day-wise-img">
+                    </div>
+                    <div class="day-temp">
+                        <p class="minValues" id="day7Min">Loading...</p>
+                        <p class="maxValues" id="day7Max">Loading...</p>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="bg-img">
-            <!-- animation weather -->
-            <img src="./images/bg-img/clear.jpg" alt="" class="weather-img">
-        </div>
-    </div>
-    <div id="weatherContainer">
-        <div id="iconContainer">
-            <div class="icons">
-                <p class="weather" id="day1"></p>
-                <div class="image"> 
-                    <img src="./images/dots.jpeg" alt="" id="img1" class="imgClass">
-                </div>
-                <p class="minValues" id="day1Min">Loading...</p>
-                <p class="maxValues" id="day1Max">Loading...</p>
-            </div>
-            <div class="icons">
-                <p class="weather" id="day2"></p>
-                <div class="image"> 
-                    <img src="./images/dots.jpeg" alt="" id="img2" class="imgClass">
-                </div>
-                <p class="minValues" id="day2Min">Loading...</p>
-                <p class="maxValues" id="day2Max">Loading...</p>
-            </div>
-            <div class="icons">
-                <p class="weather" id="day3"></p>
-                <div class="image"> 
-                    <img src="./images/dots.jpeg" alt="" id="img3" class="imgClass">
-                </div>
-                <p class="minValues" id="day3Min">Loading...</p>
-                <p class="maxValues" id="day3Max">Loading...</p>
-            </div>
-            <div class="icons">
-                <p class="weather" id="day4"></p>
-                <div class="image"> 
-                    <img src="./images/dots.jpeg" alt="" id="img4" class="imgClass">
-                </div>
-                <p class="minValues" id="day4Min">Loading...</p>
-                <p class="maxValues" id="day4Max">Loading...</p>
-            </div>
-            <div class="icons">
-                <p class="weather" id="day5"></p>
-                <div class="image"> 
-                    <img src="./images/dots.jpeg" alt="" id="img5" class="imgClass">
-                </div>
-                <p class="minValues" id="day5Min">Loading...</p>
-                <p class="maxValues" id="day5Max">Loading...</p>
-            </div>
-            <div class="icons">
-                <p class="weather" id="day6"></p>
-                <div class="image"> 
-                    <img src="./images/dots.jpeg" alt="" id="img6" class="imgClass">
-                </div>
-                <p class="minValues" id="day6Min">Loading...</p>
-                <p class="maxValues" id="day6Max">Loading...</p>
-            </div>
-            <div class="icons">
-                <p class="weather" id="day7"></p>
-                <div class="image"> 
-                    <img src="./images/dots.jpeg" alt="" id="img7" class="imgClass">
-                </div>
-                <p class="minValues" id="day7Min">Loading...</p>
-                <p class="maxValues" id="day7Max">Loading...</p>
-            </div>
-        </div>
-    </div>
-    
+    </main>
     <script src="./script.js"></script>
 </body>
 </html>
+
+<!--beta theek ho jaa-->
