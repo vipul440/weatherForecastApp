@@ -51,7 +51,7 @@ body {
     padding: 10px;
     text-align: center;
     color: #fff;
-    
+    /* border: 2px solid black;  */
 }
 
 .search-container {
@@ -66,7 +66,7 @@ body {
     height: 3rem;
     padding: 10px 20px;
     font-size: 18px;
-
+    /* background: #fff; */
 }
 
 .search-container .btn {
@@ -88,11 +88,13 @@ body {
 .weather-details .temp {
     font-size: 2.5rem;
     font-weight: 600;
+    /* border: 1px solid #fff; */
 }
 
 .weather-details .city {
     font-size: 2rem;
     margin-bottom: 5px;
+    /* border: 1px solid #fff; */
 }
 
 .details {
@@ -101,21 +103,25 @@ body {
     justify-items: center;
     gap: 10px;
     margin-top: 20px;
+    /* border: 1px solid red; */
 }
 
 .col {
     display: flex;
     justify-content: center;
     align-items: center;
+    /* border: 1px solid black; */
 }
 
 .col-1 {
     margin-left: -1.5rem;
+    /* border: 1px solid black; */
 }
 
 .col img {
     width: 2.5rem;
     margin-right: 5px;
+    /* border: 1px solid black; */
 }
 
 .humidity,
@@ -130,6 +136,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    /* border: 1px solid #fff; */
 }
 
 .error {
@@ -143,17 +150,20 @@ body {
 /* 2nd ---------------------------------------------------------------------------------------------------------------------*/
 .days-container {
     height: 11rem;
+    /* border: 1px solid #fff; */
 }
 .days-forcast{
     display: none;
 }
-.icon-container{
+
+.icon-container {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     justify-content: center;
     align-items: center;
     gap: 0.4rem;
     padding: 10px;
+    /* border: 1px solid blue; */
 }
 
 .icons {
@@ -166,6 +176,7 @@ body {
     background: linear-gradient(135deg, #4ca1af, #c4e0e5);
     box-shadow: 0 0 20px 2px rgba(0, 0, 0, .1);
     transition: 1s;
+    /* border: 1px solid red; */
 }
 
 .icons:hover {
@@ -177,6 +188,7 @@ body {
     height: 90px;
     width: 90px;
     margin: auto;
+    /* border: 1px solid black; */
 }
 
 .day-wise-img {
@@ -188,9 +200,9 @@ body {
     border-radius: 5px;
     text-align: center;
     font-weight: bold;
-    background: #000;
+    /* background: #000; */
     color: #fff;
-
+    /* border: 1px solid red; */
 }
 
 .day-temp {
@@ -206,10 +218,12 @@ body {
     margin-top: 1px;
     text-align: center;
     font-size: 0.9rem;
+    /* border: 1px solid red; */
 }
 
 
 /***** Media Query for Tab screen  *****/
+
 
 @media (min-width:501px) and (max-width:1120px) {
     body {
@@ -222,8 +236,10 @@ body {
     }
     .weather-top-container {
        min-height: 150px;
+       /* border: 1px solid white; */
     }
     .wrapper {
+        /* margin-bottom: 5px; */
         background: rgb(8, 131, 114);
         color: #1b302d;
         padding: 5px 5px;
@@ -236,6 +252,7 @@ body {
         justify-content: center;
         align-items: center;
         margin: auto;
+        /* border: 2px solid yellow; */
         
     }
 
@@ -244,10 +261,14 @@ body {
         align-items: center;
         justify-content: space-between;
         padding: 10px;
+         /* margin-top: 30px; */
+        /* margin-left: 20px;  */
+        /* border: 2px solid red; */
 
     }
 
    .col {
+    /* border: 2px solid black; */
     margin: auto;
    }
   .col img{
@@ -262,10 +283,12 @@ body {
     .icon-container {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
+        /* border: 1px solid white; */
         justify-items: center;
     }
 
     .icons {
+        /* border: 2px solid gold; */
         height: 120px;
         width: 100px;  
     }
@@ -290,7 +313,6 @@ body {
 
 
 /***** Media Query for Mobile *****/
-
 @media (max-width:500px){
     .wrapper{
         width: 100%;
@@ -319,10 +341,26 @@ body {
        padding-bottom: 60px;
     }
     .bg-img{
+       /* display: none; */
        width: 100%;
        height: 90%;
        padding-left: 0px;
     }
 }
 
-/*beta theek ho jaa*/
+
+@media (min-width:501px) and (max-width:636px){
+
+    .search-container {
+        width: 220px;
+        
+    }
+    .input{
+        width: 100%;
+    }
+    .details{
+        display: flex;
+        flex-direction: column;
+    } 
+
+}
